@@ -183,7 +183,8 @@ tests:
     post:
     - chain: kueue-operator-post
     test:
-    - chain: kueue-operator-test-e2e-dev-bundle
+    - ref: kueue-operator-hypershift-idms
+    - chain: kueue-operator-test-e2e
     workflow: hypershift-hostedcluster-workflow
 - always_run: false
   as: perfscale-payload-kueue-operator-9nodes
